@@ -5,12 +5,8 @@ const inventoryRouter = require('./routers/inventoryRouter');
 const shopRouter = require('./routers/shopRouter');
 const app = express();
 
-app.use(cors());   //Allows everything to use everything
+app.use(cors());   
 app.use(express.json());
-
-// app.get('/', (req, res) => {
-//     res.send('Hello, world!');
-// });
 
 app.use('/item', itemRouter);
 app.use('/inventory', inventoryRouter);

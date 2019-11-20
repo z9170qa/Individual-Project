@@ -16,19 +16,6 @@ html{
     right:0;
 }    
 
-/* #topRow{
-    position: fixed;
-    top: 10%;
-    right: 10%;
-    left: 10%;
-}
-
-#bottomRow{
-    position: fixed;
-    top: 20%;
-    right: 10%;
-    left: 10%; */
-/* } */
     #welcome{
         color: firebrick;
         text-align: center;
@@ -40,9 +27,4 @@ label{
     font-family: 'Times New Roman', Times, serif;
 }    
 
-/* #submit{
-    position: fixed;
-    top: 30%;
-    left: 46.5%;
-    
-} */
+

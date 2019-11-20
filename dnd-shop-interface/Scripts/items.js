@@ -1,12 +1,10 @@
 const main = document.getElementById("main");
 const itemToDel = document.getElementById("itemToDel");
-//const itemName = document.getElementById("searchItem");
 
 function delItem() {
     fetch("http://localhost:8080/item/delete/" + itemToDel.value, {method: "DELETE"})
         .then(() => window.location.href='items.html');
 
-        // .then(() => {window.location.href="./items.html"});
         
 }
 
@@ -18,7 +16,6 @@ itemName = sessionStorage.getItem("itemName");
         fetch("http://localhost:8080/item/get/" + itemName)
         .then(res => res.
             json())
-        //  .then(json => console.log(json));
         .then(json => displayItems(json)).then( () => sessionStorage.clear());
     
     
@@ -27,7 +24,6 @@ itemName = sessionStorage.getItem("itemName");
     fetch("http://localhost:8080/item/get/all")
         .then(res => res.
             json())
-        // .then(json => console.log(json));
         .then(json => displayItems(json));
         
 
@@ -41,7 +37,6 @@ function displayItems(data) {
         let newItem = document.createElement("div");
           
         newItem.className = "card mb-3";     
-        // newItem.style = "max-width: 700px";
 
         let container = document.createElement("div");
         container.className = "row no-gutters";

@@ -1,6 +1,3 @@
-// const shopMain = document.getElementById("shopMain");
-// const invMain = document.getElementById("invMain");
-
 function showInvShop() {
     const shopMain = document.getElementById("shopMain");
     const invMain = document.getElementById("invMain");
@@ -13,7 +10,6 @@ function showShop() {
 
     fetch("http://localhost:8080/shop/get/all")
         .then(res => res.json())
-        // .then(json => console.log(json));
         .then(json => displayShopItems(json));
 
 }
@@ -25,7 +21,6 @@ function displayShopItems(data) {
         let newItem = document.createElement("div");
 
         newItem.className = "card mb-3";
-        // newItem.style = "max-width: 700px";
 
         let container = document.createElement("div");
         container.className = "row no-gutters";
@@ -57,7 +52,6 @@ function showInventory() {
 
     fetch("http://localhost:8080/inventory/get/all")
         .then(res => res.json())
-        // .then(json => console.log(json));
         .then(json => displayInvItems(json));
 
 }
@@ -69,7 +63,6 @@ function displayInvItems(data) {
         let newItem = document.createElement("div");
 
         newItem.className = "card mb-3";
-        // newItem.style = "max-width: 700px";
 
         let container = document.createElement("div");
         container.className = "row no-gutters";
@@ -88,7 +81,6 @@ function displayInvItems(data) {
         info.className = "card-text"
         info.innerHTML = "<b>Type:</b> " + instance.item.type + "<br><b>Description:</b> " + instance.item.description + "<br><b>Cost:</b> "
             + instance.item.cost;
-        // + "<br><b>Quantity:</b> " + instance.quantity
         cardBody.appendChild(info);
 
 
@@ -107,9 +99,4 @@ function buyItem() {
         .then(fetch("http://localhost:8080/inventory/post/" + buyItem.value, { method: "POST" }))
         .then(res => res.json())
         .then(json => location.reload(true));
-
-        //Need to make it so that the body is created here so that if buy a dagger for instance, all of the stats for dagger are pulled from
-        //the item table, and then will just have quantity of 1 in the inventory
-        //change the inventory post router so that it includes the item stuff, then for inventory post make sure that
-        //do it by name and link the itemid foreign key to it.
 }

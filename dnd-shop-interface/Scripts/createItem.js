@@ -3,7 +3,6 @@ function createItem() {
     const crItemType = document.getElementById("createItemType");
     const crItemCost = document.getElementById("createItemCost");
     const crItemDesc = document.getElementById("createItemDesc");
-    // if (crItemType in ["weapon, adventure gear, tools"]) {
     fetch('http://localhost:8080/item/post/', {
         method: 'POST',
         body: JSON.stringify({

@@ -4,7 +4,6 @@ function updateItem() {
     const upItemType = document.getElementById("updateItemType");
     const upItemCost = document.getElementById("updateItemCost");
     const upItemDesc = document.getElementById("updateItemDesc");
-    // if (crItemType in ["weapon, adventure gear, tools"]) {
     fetch('http://localhost:8080/item/update/' + upItem.value, {
         method: 'PUT',
         body: JSON.stringify({

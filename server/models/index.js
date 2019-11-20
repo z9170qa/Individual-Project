@@ -3,8 +3,8 @@ const Sequelize = require('sequelize');
 // Create sequalizer instance
 const sequelize = new Sequelize(
     'dndshopinterface',                 // Database
-    'root',                 // Username
-    'password',     // Password
+    'root',                             // Username
+    'password',                         // Password
     {
         host: 'localhost',
         dialect: 'mysql'
@@ -22,7 +22,7 @@ Item.hasOne(ShopItem, {foreignKey: 'item_id'});
 InventoryItem.belongsTo(Item, {foreignKey: 'item_id'});
 Item.hasOne(InventoryItem, {foreignKey: 'item_id'});
 
-// Associations
+//Possible Associations
 // 1:1
 // Item.belongsTo(Location);
 // Location.hasOne(Item);
@@ -37,7 +37,7 @@ Item.hasOne(InventoryItem, {foreignKey: 'item_id'});
 
 // Sync models and add default data
 sequelize.sync()
-// {force: true}
+// {force: true} to overwrite each time
 
 // .then(() => {
 //     Location.create({ address: '123 Somewhere' });

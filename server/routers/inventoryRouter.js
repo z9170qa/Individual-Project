@@ -33,8 +33,8 @@ router.post('/post', async (req, res) => {
 });
 
 // router.post('/addToInv/:name', async (req, res) => {
-//     const y = await models.InventoryItem.findOne({
-//         include: [
+//     const y = await models.Item.findOne({
+//         include: [                                       //left in to show what I was working on with the add to Inv function
 //             {
 //                 model: models.Item,
 //                 where: {

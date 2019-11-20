@@ -8,19 +8,8 @@ http://localhost:8080/item/get/all
 
 ###
 
-# POST http://localhost:8080/item/post/ HTTP/1.1
-# Content-Type: application/json
-
-# {
-#     "name": "wand",
-#     "type": "weapon",
-#     "cost": 240,
-#     "description": "This is a wand",
-
-# }
-
-# ###
 
 http://localhost:8080/item/delete/dagger
 
 ###
+

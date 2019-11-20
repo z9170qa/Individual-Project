@@ -1,0 +1,79 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/shop.css">
+</head>
+<html>
+
+<body onload="showInvShop();">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a style="font-size:2.15vw" class="navbar-brand" href="./welcome.html">D&D Inventory/Shop Interface</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./welcome.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./items.html">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./inventory.html">Player Inventory</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./shop.html">Barthen's Provisions</a>
+                </li>
+
+
+
+            </ul>
+            <div class="form-inline my-2 my-lg-0 justify-content-center">
+                <input id="searchItem" class="form-control mr-sm-2" type="search" placeholder="Search Items"
+                    aria-label="Search">
+                <button id='searchBar' class="btn btn-outline-danger my-2 my-sm-0" onclick="searchItems();"
+                    type="submit">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <h1 id="welcome">
+        <u style="font-size:3.5vw">WELCOME TO BARTHEN'S PROVISIONS</u></h1> <br>
+    <div id="shopInvDiv" class="row">
+        <div id="invMain" class="col-sm-4 mb-3">
+            <h2 id="invList"><u>INVENTORY</u></h2>
+        </div>
+
+        <div class="col-sm-4 mb-3">
+            <input id="buyItem" type="search" placeholder="Select Item to Buy" aria-label="Search">
+            <br>
+            <br>
+            <button id="buy" onclick="buyItem();">Buy Item</button>
+        </div>
+
+        <div id="shopMain" class="col-sm-4 mb-3">
+            <h2 id="shopList"><u>SHOP</u></h2>
+        </div>
+    </div>
+    <!-- <br>
+    <br>
+    <div id="trbutton">
+    <button id="transaction" onclick="transaction">Make Transaction</button>
+    </div> -->
+    <script src="./Scripts/js/bootstrap.bundle.min.js"></script>
+    <script src="./Scripts/js/bootstrap.min.js"></script>
+    <script src="Scripts/shop.js"></script>
+    <script src="./Scripts/search-box.js"></script>
+</body>
+
+</html>

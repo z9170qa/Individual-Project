@@ -1,0 +1,89 @@
+body{
+    text-align: center;
+    background-image: url("dndBackground.jpg");
+    }
+
+nav{background-image: url("dndBackground.jpg");
+    color: firebrick;
+    font-size: 25px;
+}    
+
+.navbar-brand{
+    font-size: 30px;
+}
+
+
+nav a {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+    #welcome{
+        color: firebrick;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+#main{
+    margin: auto;
+    width: 40%;
+}
+
+#createItem{
+    text-align: center;
+    border-color: firebrick;
+    background-color: firebrick;
+    color: white;
+    padding: 15px 32px;
+    font-size: 18px;
+}
+
+
+#itemToUpdate{
+    position: fixed;
+    left: 75%;
+    top: 45%;
+    width: 4.35cm;
+}
+
+#buttons{
+    position: fixed;
+    left: 75%; 
+    top: 50%;
+}
+
+#updateItem{
+    border-color: firebrick;
+    background-color: firebrick;
+    color: white;
+    padding: 15px 32px;
+    font-size: 18px;
+}
+
+#delItem{
+    border-color: firebrick;
+    background-color: firebrick;
+    color: white;
+    padding: 15px 32px;
+    font-size: 18px;
+}
+
+#itemToDel{
+    width: 4.40cm;
+}
+
+h1{text-transform: uppercase;
+    color: firebrick;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+}
+
+p{font-size: 22px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+.card{
+    background-color: transparent;
+    border-color: firebrick;
+}

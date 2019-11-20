@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-image: url("dndBackground.jpg"); 
+    position:fixed;
+    top:0;
+    bottom:0; 
+    left:0;
+    right:0;
+    }
+
+html{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}    
+.navbar-brand{
+    font-size: 30px;
+}
+
+nav{background-image: url("dndBackground.jpg");
+    font-size: 25px;
+}    
+nav a {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+
+    #welcome{
+        color: firebrick;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+
+    

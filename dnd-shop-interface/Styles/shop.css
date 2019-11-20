@@ -1,0 +1,79 @@
+body{
+    text-align: center;
+    background-image: url("dndBackground.jpg");
+    }
+
+.navbar-brand{
+    font-size: 30px;
+}
+
+nav{background-image: url("dndBackground.jpg");
+    color: firebrick;
+    font-size: 25px;
+}    
+
+nav a {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+#trbutton {
+    position: fixed;
+    left: 45%;
+    top: 50%;
+}
+
+#buy {
+    border-color: firebrick;
+        background-color: firebrick;
+        color: white;
+        padding: 20px 40px;
+         position: fixed;
+        left: 45%; 
+        top: 50%;
+        font-size: 18px;
+}
+
+#buyItem{
+    position: fixed;
+    left:45%;
+    top: 45%;
+    width: 4.05cm;
+}
+
+    #welcome{
+        color: firebrick;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    h1{text-transform: uppercase;
+        color: firebrick;
+        text-align: left;
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    #invList, #shopList{text-transform: uppercase;
+        color: firebrick;
+        font-size: 3.5vw;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    p{font-size: 22px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .card{
+        background-color: transparent;
+        border-color: firebrick;
+    }
+
+    #main{
+        margin: auto;
+        width: 40%;
+        
+    }
+
+    

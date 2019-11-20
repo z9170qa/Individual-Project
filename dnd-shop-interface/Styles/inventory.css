@@ -1,0 +1,81 @@
+body{
+    text-align: center;
+    background-image: url("dndBackground.jpg");
+    }
+
+.navbar-brand{
+    font-size: 30px;
+}
+
+nav{background-image: url("dndBackground.jpg");
+    color: firebrick;
+    font-size: 25px;
+}    
+
+.navbar-brand{
+    font-size: 30px;
+}
+
+    #addItem{
+        border-color: firebrick;
+        background-color: firebrick;
+        color: white;
+        padding: 15px 32px;
+        font-size: 18px;
+    }
+    
+#delItem{
+        border-color: firebrick;
+        background-color: firebrick;
+        color: white;
+        padding: 15px 32px;
+        font-size: 18px;
+}
+
+
+
+#add_del{
+        position: fixed;
+        left: 72.5%; 
+        top: 50%;
+}
+
+#invItem{
+    position: fixed;
+    left: 72.5%;
+    top: 45%;
+    width: 3.95cm;
+}
+nav a {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+    #welcome{
+        color: firebrick;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    h1{text-transform: uppercase;
+        color: firebrick;
+        text-align: left;
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    p{font-size: 22px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .card{
+        background-color: transparent;
+        border-color: firebrick;
+    }
+
+    #main{
+        margin: auto;
+        width: 40%;
+        
+    }
+    
